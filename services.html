@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ef3a41191e.js" crossorigin="anonymous"></script>
+    <title>Services Description </title>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo_issa.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html#Home">Home</a></li>
+                    <li><a href="#ai">AI Engineer</a></li>
+                    <li><a href="#dev">Software/Web Development</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+            </nav>
+
+        
+        <div class="header-text">
+            <h6 class="no-phone"><span>Data Science / Engineer  </span>position search.</h6>
+            <br>
+            <p class="p-no-phone">Start Date : 10/2023 <br> Contract type : CDI</p>
+            <h4 class="phone"><span>Data Science / Engineer position </span> </h4>
+            <br>
+            <p class="p-phone"></p>
+        </div>
+    </div>
+ </div>
+
+
+    <!--KNN Project -->
+
+     <div id="ai">
+         <div class="container">
+         <div class="row">
+             <div class="about-col-1">
+             <img src="images/ai_image.jpg">
+             </div>
+             <div class="about-col-2">
+             <h3 class="sub-title"> Data Engineer / Data Scientist  </h3> <br>
+             <p class="presentation">
+                 Thanks to my education and experience, I have acquired skills that will allow me to analyze all your data, give them meaning and extract usable information using data science and Machine Learning techniques. 
+             </p> <br> 
+             <p>My main data science / engineer services are : </p> <br>
+
+             <lu>
+                  <li>Collecting and Storing Data</li>
+                 <li>Data Intégration and Exploration</li>
+                 <li>Data Analysis </li>
+                 <li>Data Modeling</li>
+                 <li>Evaluation and Interpretation of results</li>
+             
+             </lu>
+             <p></p>
+             </div>
+         </div>
+         </div>
+     </div>
+
+    <!----dev -->
+     <br>  <br>  <br>  <br> <br> <br>
+    <div id="dev">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/web_dev.jpg">
+            </div>
+            <div class="about-col-2">
+              <h3 class="sub-title">Software / Web Development</h3> <br>
+              <p class="presentation">
+                Knowing how to program well is a necessary skill to be a good AI engineer. During my bachelor degree and my first internship, I had the opportunity to participate in several development projects. I master object-oriented and functional programming. I can work on software and web development projects.
+                Here are my skills in this field:
+              </p> <br>
+              <lu>
+                <li>UML Modeling</li>
+                <li>Programming Languages : Python, Java, C , JavaScript, PHP, HTML/CSS</li>
+                <li>Project management: agile methodology (SCRUM) </li>
+              </lu>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-------- Contacts -->
+    <br>  <br>  <br>  <br> <br> <br>
+    <div id="contact">
+        <div class="container">
+          <h3 class="sub-title">Contact Me</h3>
+          <div class="row">
+            
+            <div class="contact-left" >
+              <p> <i class="fa-solid fa-paper-plane"></i> <a href="mailto:issaabakar17@gmail.com" target="_blank" class="button">Send email</a></p>
+              <p> <i class="fa-solid fa-phone"></i> <a href="tel:+33758342537" class="button" >0758342537</a></p>
+            </div>
+            <div class="contact-right">
+              <a href="images/ds-de.pdf" download target="_blank" class="btn btn2"> Download CV</a>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/issa-abakar-564248159/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Abakar-Issa" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+        <p> Copyright © 2023 , Issa. </p>
+        </div>
+    </div>
+      
+  
+    <script>
+
+      var  tablinks = document.getElementsByClassName("tab-links");
+      var  tabcontents = document.getElementsByClassName("tab-contents");
+    
+      function opentab(tabname){
+        for( tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+    
+        for( tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+    
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+    
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+    
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+    
+    
+</body>
+</html>

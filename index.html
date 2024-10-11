@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio personnel - Issa </title>
+  <link rel = "stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/ef3a41191e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+  <div class="container">
+      <nav>
+          <img src="images/logo_issa.png" class="logo">
+          <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contacts</a></li>
+              <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <h6 class="no-phone">Hi, <span> Welcome </span>on my portfolio.</h6>
+        <br>
+        <p class="p-no-phone"> Looking for a <span> Data Scientist / Engineer </span> position.  </p>
+        <p class="p-no-phone">Start Date : 10 / 2023 <br> Contract type : CDI  <br> Location : France</p>
+        <h4 class="phone"><span>  Data Scientist / Engineer position.</span> </h4>
+        <br>
+        <p class="p-phone"></p>
+    </div>
+  </div>
+</div>
+
+<!-----------about---------->
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/photo_issa.jpg">
+      </div>
+      <div class="about-col-2">
+        <h3 class="sub-title">About Me</h3> <br>
+        <p class="presentation">Passionate about computer science and mathematics, I completed a computer science degree after my scientific baccalaureate. I will soon have another degree as an engineer in artificial intelligence at the Paul Sabatier University of Toulouse. 
+          My choice for AI was a natural one as it is a field that combines both mathematics and computer science. It is also a fascinating and rapidly expanding field.<br>
+          I had the opportunity to do 2 internships during my training. During these internships, I was able to apply what I learned in class, while developing my computer expertise.<br>
+          My education and previous experiences have helped me develop the computer science skills I have today, however, I feel that in order to grow my skills and launch my career, it is necessary to get involved in a large corporate project. I am therefore looking for more challenging assignments in a dynamic international company, where I could grow as an AI engineer.          
+        </p> <br>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('education')"> Education</p>
+          <p class="tab-links" onclick="opentab('experience')"> Experiences</p>
+          <p class="tab-links " onclick="opentab('skills')"> Skills</p>
+          <p class="tab-links" onclick="opentab('languages')"> Languages</p>
+          <p class="tab-links" onclick="opentab('hobbies')"> Hobbies</p>
+
+        </div>
+
+        <div class="tab-contents active-tab" id = "education">
+          <ul>
+            <li><span>University of Paul Sabatier (France) | 2021 - current </span><br>Master in Computer Science : Artificial Intelligence / Data & Knowledge </li>
+            <li><span>University of Caen Normandy (France) | 2018 - 2021 </span><br>Computer science degree </li>
+            <li><span>Carmen Rosales High School (Tchad) | 2017 </span><br>Scientific secondary school diploma </li>
+          </ul>
+        </div>
+
+       
+        <div class="tab-contents" id = "experience">
+          <ul>
+            <li><span>Data Science Intern at PIXILIB | 04/2022 - current  </span> <br> Image Processing <br> Deep Learning Modeling for Image Segmentation<br> Deploy Deep Learning Models </li>
+            <li><span>Data Science Intern at IRIT Institute | 05/2022 - 08/2022  </span> <br> Data Analysis <br> Machine Learning Modeling <br> Data Augmentation with GAN ( Generative Adversarial Networks) </li>
+            <li><span>Web Developpement Intern at Wavy Group | 04/2021 - 06/2021 </span><br> Development of the Wavy website </li>
+          </ul>
+        </div>
+
+        <div class="tab-contents " id = "skills">
+          <ul>
+            <li><span>Programming Languages and Tools </span><br>Python : Numpy, Pandas, Pytorch, Tensorflow , Matplotlib, Seaborn, Scipy .... and Django 
+              <br> Java , Scala, C , JavaScript <br> Database management : MySQL, PostgreSQL, MongoDB, Neo4j <br> Big Data Management : Apache Hadoop, Apache Spark <br> Versionning : Git, GitLab </li>
+            <li><span>Data Science skills  </span><br> Machine Learning, Deep Learning, Processing Large Dataset, Data Visualisation , Statistical Analysis and computing, Mathématics (linear algebra, Probabilities ... ) </li>
+            <li><span>Relationnal Skills  </span><br> Teamwork , Communication, Ability to Adapt and Analyze </li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id = "languages">
+          <ul>
+            <li><span>French  </span><br> Native Language </li>
+            <li><span>English </span><br> Intermediate level</li>
+            <li><span>Arabic  </span><br> Intermediate level </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id = "hobbies">
+          <ul>
+            <li><span>Sport  </span><br> Football , Jogging </li>
+            <li><span>Reading </span><br> Scientific books, Personal Development</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-------- Services -->
+<div id="services">
+  <div class="container">
+    <h3 class="sub-title">My Services</h3>
+
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code "></i>
+        <h2>Data Engineer / Data Scientist </h2>
+        <p>Thanks to my education and experience, I have acquired skills that will allow me to analyze all your data, give them meaning and extract usable information using data science and Machine Learning techniques : Collecting and Storing Data, Processing Data, Analyze Data, ML modeling, Interpretations.</p>
+        <a href="services.html#ai" target="_blank"> Learn more</a>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Software and Web Development</h2>
+        <p>Knowing how to program well is a necessary skill to be a good AI engineer. During my bachelor degree and my first internship, I had the opportunity to participate in several development projects. I master object-oriented and functional programming..</p>
+        <a href="services.html#dev" target="_blank"> Learn more</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-------- portfolio -->
+
+<div id="portfolio">
+  <div class="container">
+    <h3 class="sub-title">Portfolio</h3>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/Unsupervised-Machine-Learning.jpg">
+        <div class="layer">
+          <h3>PCA and KNN project</h3>
+          <p> 
+            Image classification using PCA (Principal Component Analysis) and KNN (K-Nearest Neighbors) as partioning approach.  <br></p>
+          <a href="portfolio.html#knn" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+     
+      <div class="work">
+        <img src="images/data_analysis.jpg" target="_blank">
+        <div class="layer">
+          <h3>Data Analysis</h3>
+          <p>
+            Data analysis using a sleep data set to predict cardiovascular events.          
+          </p>
+          <a href="portfolio.html#data_analysis" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="images/prediction.png">
+        <div class="layer">
+          <h3>ML Modeling</h3>
+          <p>
+            After the previous data analysis, this work consists in using these data to make a prediction of the target AVC (Cardiovascular accident). 
+          </p>
+          <a href="portfolio.html#prediction" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="portfolio.html#data_integration" target="_blank" class="btn">See more</a>
+  </div>
+</div>
+
+<!-------- Contacts -->
+<div id="contact">
+  <div class="container">
+    <h3 class="sub-title">Contact Me</h3>
+    <div class="row">
+      
+      <div class="contact-left" >
+        <p> <i class="fa-solid fa-paper-plane"></i> <a href="mailto:issaabakar17@gmail.com" target="_blank" class="button">Send email</a></p>
+        <p> <i class="fa-solid fa-phone"></i> <a href="tel:+33758342537" target="_blank" class="button" >0758342537</a></p>
+      </div>
+      <div class="contact-right">
+        <a href="images/ds-de.pdf" download target="_blank" class="btn btn2"> Download CV</a>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/issa-abakar-564248159/" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Abakar-Issa" target="_blank" ><i class="fa-brands fa-github"></i></a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p> Copyright © 2023 , Issa. </p>
+  </div>
+</div>
+
+<script>
+
+  var  tablinks = document.getElementsByClassName("tab-links");
+  var  tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for( tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+
+    for( tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+</script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</body>
+</html>
